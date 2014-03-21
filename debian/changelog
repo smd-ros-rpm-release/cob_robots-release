@@ -1,0 +1,8 @@
+ros-hydro-cob-robots (0.5.1-0precise) precise; urgency=high
+
+  * Initial catkinization.
+  * Contributors: abubeck
+
+ -- Florian Weisshardt <fmw@ipa.fhg.de>  Wed, 19 Mar 2014 23:00:00 -0000
+
+
