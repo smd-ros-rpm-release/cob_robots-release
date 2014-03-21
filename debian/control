@@ -1,0 +1,12 @@
+Source: ros-hydro-cob-hardware-test
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/cob_hardware_test
+Standards-Version: 3.9.2
+
+Package: ros-hydro-cob-hardware-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-cob-bringup, ros-hydro-cob-default-robot-config, ros-hydro-rostest
+Description: This stack supports for automated hardware testing of the bringup layer.
