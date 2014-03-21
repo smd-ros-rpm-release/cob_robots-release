@@ -1,0 +1,12 @@
+Source: ros-hydro-cob-bringup
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/cob_bringup
+Standards-Version: 3.9.2
+
+Package: ros-hydro-cob-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-camera1394, ros-hydro-cob-base-drive-chain, ros-hydro-cob-base-velocity-smoother, ros-hydro-cob-cam3d-throttle, ros-hydro-cob-camera-sensors, ros-hydro-cob-collision-velocity-filter, ros-hydro-cob-command-gui, ros-hydro-cob-dashboard, ros-hydro-cob-default-env-config, ros-hydro-cob-default-robot-config, ros-hydro-cob-footprint-observer, ros-hydro-cob-hardware-config, ros-hydro-cob-head-axis, ros-hydro-cob-hokuyo, ros-hydro-cob-hwboard, ros-hydro-cob-lbr, ros-hydro-cob-light, ros-hydro-cob-monitoring, ros-hydro-cob-relayboard, ros-hydro-cob-sick-lms1xx, ros-hydro-cob-sick-s300, ros-hydro-cob-sound, ros-hydro-cob-teleop, ros-hydro-cob-trajectory-controller, ros-hydro-cob-undercarriage-ctrl, ros-hydro-cob-voltage-control, ros-hydro-costmap-2d, ros-hydro-diagnostic-aggregator, ros-hydro-hokuyo-node, ros-hydro-image-proc, ros-hydro-joy, ros-hydro-nodelet, ros-hydro-openni-launch, ros-hydro-pr2-computer-monitor, ros-hydro-pr2-dashboard-aggregator, ros-hydro-prosilica-camera, ros-hydro-robot-state-publisher, ros-hydro-rviz, ros-hydro-schunk-powercube-chain, ros-hydro-schunk-sdh, ros-hydro-ur-driver, ros-hydro-wifi-ddwrt
+Description: This package provides launch files for operating Care-O-bot.
