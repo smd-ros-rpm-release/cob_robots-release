@@ -1,0 +1,12 @@
+Source: ros-hydro-cob-controller-configuration-gazebo
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/cob_controller_configuration_gazebo
+Standards-Version: 3.9.2
+
+Package: ros-hydro-cob-controller-configuration-gazebo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-cob-bringup, ros-hydro-cob-phidgets, ros-hydro-cob-relayboard, ros-hydro-cob-sick-s300, ros-hydro-cob-sound, ros-hydro-effort-controllers, ros-hydro-image-proc, ros-hydro-joint-state-controller, ros-hydro-joint-trajectory-action, ros-hydro-robot-mechanism-controllers, ros-hydro-rostopic, ros-hydro-schunk-simulated-tactile-sensors, ros-hydro-velocity-controllers
+Description: This packages provides the controller configuration for simulating Care-O-bot in the gazebo simulator.
