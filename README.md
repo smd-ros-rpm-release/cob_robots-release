@@ -1,3 +1,28 @@
+## cob_robots (hydro) - 0.5.1-4
+
+User `fmw@fmw-xps` released the packages in the `cob_robots` repository into the `hydro` distro by running `/usr/bin/bloom-release --ros-distro hydro --track hydro cob_robots` on `Thu, 27 Mar 2014 08:40:42 -0000`
+
+These packages were released:
+- `cob_bringup`
+- `cob_controller_configuration_gazebo`
+- `cob_default_robot_config`
+- `cob_hardware_config`
+- `cob_monitoring`
+- `cob_robots`
+
+Version of package(s) in repository `cob_robots`:
+- rosdistro version: `0.5.1-3`
+- old version: `0.5.1-3`
+- new version: `0.5.1-4`
+
+Versions of tools used:
+- bloom version: `0.5.2`
+- catkin_pkg version: `0.1.26`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## cob_robots (hydro) - 0.5.1-3
 
 User `fmw@fmw-xps` released the packages in the `cob_robots` repository into the `hydro` distro by running `/usr/bin/bloom-release --rosdistro hydro --track hydro cob_robots` on `Tue, 25 Mar 2014 07:13:23 -0000`
