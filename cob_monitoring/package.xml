@@ -1,6 +1,6 @@
 <package>
   <name>cob_monitoring</name>
-  <version>0.5.3</version>
+  <version>0.5.4</version>
   <description>cob_monitoring</description>
   
   <license>LGPL</license>
@@ -13,10 +13,8 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <run_depend>cob_msgs</run_depend>
   <run_depend>cob_script_server</run_depend>
-  <run_depend>cob_relayboard</run_depend>
-  <!-- <test_depend>cob_script_server</test_depend> -->
-  <!-- <test_depend>cob_relayboard</test_depend> -->
 
   <export>
 

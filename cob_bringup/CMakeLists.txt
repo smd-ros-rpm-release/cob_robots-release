@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(cob_bringup)
 
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS roslaunch)
 
 # rostest for robots
 set(robotlist
@@ -13,6 +13,7 @@ cob3-4
 cob3-5
 cob3-6
 cob3-7
+cob3-8
 raw3-1
 raw3-2
 raw3-3
@@ -31,11 +32,12 @@ ipa-factory
 
 # loop through list of robots for testing
 foreach(robot ${robotlist})
-	foreach(env ${envlist})
+	#foreach(env ${envlist})
 		message("testing for robot: ${robot} in env: ${env}")
 		#rosbuild_add_roslaunch_check(tools robot:=${robot} robot_env:=${env})
 		#rosbuild_add_roslaunch_check(tools ROBOT=${robot} ROBOT_ENV=${env})
-	endforeach(env)
+		roslaunch_add_file_check(robots/${robot}.xml robot_env:=ipa-apartment)
+	#endforeach(env)
 endforeach(robot)
 
 
@@ -51,18 +53,8 @@ endforeach(robot)
 
 catkin_package()
 
-## Mark cpp header files for installation
-install(DIRECTORY robots
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-## Mark cpp header files for installation
-install(DIRECTORY drivers
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-## Mark cpp header files for installation#
-install(DIRECTORY tools
+## Mark launch files for installation
+install(DIRECTORY robots drivers controllers tools
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 

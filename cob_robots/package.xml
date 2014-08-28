@@ -1,6 +1,6 @@
 <package>
   <name>cob_robots</name>
-  <version>0.5.3</version>
+  <version>0.5.4</version>
   <description>This stack holds packages for hardware configuration as well as launch files for starting up the basic layer for operating Care-O-bot.</description>
 
   <license>LGPL</license>
@@ -8,7 +8,8 @@
   <url type="website">http://ros.org/wiki/cob_robots</url>
   <!-- <url type="bugtracker"></url> -->
 
-   <maintainer email="fmw@ipa.fhg.de">Florian Weisshardt</maintainer>
+  <maintainer email="fmw@ipa.fhg.de">Florian Weisshardt</maintainer>
+  <maintainer email="nhg@ipa.fhg.de">Nadia Hammoudeh Garcia</maintainer> 
   <author email="fmw@ipa.fhg.de">Florian Weisshardt</author>
 
   <buildtool_depend>catkin</buildtool_depend>
