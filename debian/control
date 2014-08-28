@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-controller-configuration-gazebo
+Section: misc
+Priority: extra
+Maintainer: Florian Weisshardt <fmw@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-roslaunch
+Homepage: http://ros.org/wiki/cob_controller_configuration_gazebo
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-controller-configuration-gazebo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-cob-bringup, ros-indigo-cob-cam3d-throttle, ros-indigo-cob-phidgets, ros-indigo-cob-sick-s300, ros-indigo-cob-sound, ros-indigo-controller-manager, ros-indigo-effort-controllers, ros-indigo-gazebo-ros-control, ros-indigo-joint-state-controller, ros-indigo-robot-state-publisher, ros-indigo-ros-controllers, ros-indigo-rostopic, ros-indigo-schunk-simulated-tactile-sensors, ros-indigo-topic-tools, ros-indigo-velocity-controllers
+Description: This packages provides the controller configuration for simulating Care-O-bot in the gazebo simulator.
