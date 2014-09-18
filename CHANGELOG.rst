@@ -2,6 +2,12 @@
 Changelog for package cob_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.0 (2014-09-18)
+------------------
+* moved frame_tracker to separate package
+* moved frame_tracker to separate package
+* Contributors: ipa-fxm
+
 0.5.4 (2014-08-28)
 ------------------
 * remove obsolete cob_hwboard
