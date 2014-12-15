@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-hardware-config
+Section: misc
+Priority: extra
+Maintainer: Nadia Hammoudeh Garcia <nhg@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-roslaunch, ros-indigo-rostest
+Homepage: http://ros.org/wiki/cob_hardware_config
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-hardware-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-cob-calibration-data, ros-indigo-cob-description, ros-indigo-prace-common, ros-indigo-raw-description, ros-indigo-schunk-description, ros-indigo-ur-description
+Description: This package contains configuration for each robot instance (e.g. cob3-1, cob3-2,...). There is a directory for each robot with configuration about urdf and hardware/device configurations.
