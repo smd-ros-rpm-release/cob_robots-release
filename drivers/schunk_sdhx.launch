@@ -3,10 +3,9 @@
 
 	<arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
 	<arg name="pkg_hardware_config" default="$(find cob_hardware_config)"/>
-	<arg name="component_name" default="light"/>
+	<arg name="component_name"/>
 
-	<!-- start light controller -->
-	<node pkg="cob_light" type="cob_light" name="$(arg component_name)" respawn="false" output="screen" >
+	<node name="$(arg component_name)" pkg="schunk_sdhx" type="sdhx_node.py" respawn="true" output="screen" >
 		<rosparam command="load" file="$(arg pkg_hardware_config)/$(arg robot)/config/$(arg component_name).yaml"/>
 	</node>
 
